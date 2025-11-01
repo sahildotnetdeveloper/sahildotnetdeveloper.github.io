@@ -1,0 +1,246 @@
+<!--
+  File: index.html
+  Purpose: Single-file portfolio (Option A style + header inspired by Option C without animations)
+  How to use:
+    1) Save this file as `index.html` in a folder.
+    2) Edit placeholders (SEARCH FOR "REPLACE_ME" or sample values) to add your real info.
+    3) To publish on GitHub Pages:
+         - Create a repository named <your-github-username>.github.io
+         - Commit this index.html to the main branch
+         - GitHub Pages will serve it at: https://<your-github-username>.github.io
+       Or deploy from any branch via Settings → Pages (choose root /docs or main branch)
+    4) SSL / https is provided automatically by GitHub Pages.
+
+  Notes:
+    - This is a lightweight, accessible, professional single-page portfolio.
+    - No heavy animations or frameworks — easy to customize.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sahil Kumar — .NET Developer</title>
+  <meta name="description" content="Sahil Kumar — .NET Developer. Backend engineering, ASP.NET Core, Web APIs, SQL Server, Entity Framework.">
+
+  <!-- Simple modern reset + utility CSS -->
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#6ee7b7; /* soft green */
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      --fs-h1:clamp(1.7rem,4vw,2.6rem);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,var(--bg),#071022 120%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px 20px;
+    }
+    .container{max-width:var(--maxw);margin:0 auto}
+
+    /* Header / Hero */
+    header{display:flex;gap:28px;align-items:center;padding:28px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(6px);}
+    .hero-left{flex:1}
+    .hero-right{width:220px;flex-shrink:0}
+    .avatar{width:220px;height:220px;border-radius:16px;background:linear-gradient(135deg,#0f1724 0%, #071022 100%);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+    h1{font-size:var(--fs-h1);margin:0 0 8px}
+    .lead{color:var(--muted);margin:0 0 16px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--accent);text-decoration:none;font-weight:600}
+    .btn.secondary{color:var(--muted);border-style: dashed}
+
+    /* Grid sections */
+    main{margin-top:22px;display:grid;grid-template-columns:1fr 340px;gap:22px}
+    section.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+
+    /* Projects */
+    .projects{display:flex;flex-direction:column;gap:12px}
+    .project{padding:12px;border-radius:10px;background:var(--glass);display:flex;justify-content:space-between;gap:12px}
+    .proj-left{flex:1}
+    .proj-title{font-weight:700;margin:0}
+    .proj-desc{color:var(--muted);margin:6px 0 0;font-size:0.95rem}
+    .proj-meta{font-size:0.85rem;color:var(--muted);margin-top:10px}
+
+    /* Sidebar */
+    .profile{display:flex;flex-direction:column;gap:12px}
+    .links a{text-decoration:none;color:var(--accent);display:inline-block;margin-right:10px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:0.88rem;border:1px solid rgba(255,255,255,0.02)}
+
+    /* Contact */
+    .contact-form label{display:block;font-size:0.9rem;margin-bottom:6px}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    .contact-form textarea{min-height:120px;resize:vertical}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+    /* Responsive */
+    @media (max-width:900px){main{grid-template-columns:1fr} .hero-right{display:none} .avatar{width:160px;height:160px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero-left">
+        <p style="margin:0;color:var(--accent);font-weight:700">.NET Developer</p>
+        <h1>Sahil Kumar</h1>
+        <p class="lead">I build reliable backend systems and APIs using ASP.NET Core, Entity Framework and SQL Server. I focus on clean architecture, testability and measurable performance.</p>
+        <div class="cta">
+          <a class="btn" href="https://github.com/sahilfolio" target="_blank" rel="noopener">View GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/sahilfolio" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn secondary" href="#projects">Projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar" aria-hidden="true">
+          <!-- Replace with your photo: -->
+          <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c8d6c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Avatar placeholder">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section id="about" class="card">
+          <h2 style="margin-top:0">About</h2>
+          <p style="color:var(--muted);">Hello — I'm <strong>Sahil Kumar</strong>, a backend-focused .NET developer. I design and implement RESTful APIs, build scalable database schemas, and write maintainable C# code. I have experience with cloud deployment, CI/CD pipelines and unit/integration testing.</p>
+          <p style="margin-top:10px;color:var(--muted)"><strong>Email:</strong> <a href="mailto:hello@example.com" style="color:var(--accent)">hello@example.com</a></p>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Projects</h2>
+          <div class="projects">
+
+            <!-- Project 1 -->
+            <article class="project">
+              <div class="proj-left">
+                <p class="proj-title">Employee Management API</p>
+                <p class="proj-desc">A role-based employee management API with JWT authentication, pagination and audit logging.</p>
+                <p class="proj-meta">Tech: ASP.NET Core • Entity Framework • SQL Server • Docker</p>
+              </div>
+              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end">
+                <a class="btn" href="https://github.com/sahilfolio/employee-api" target="_blank" rel="noopener">Source</a>
+                <a href="#" style="margin-top:8px;color:var(--muted);font-size:0.9rem">Updated: Mar 2025</a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project">
+              <div class="proj-left">
+                <p class="proj-title">TaskFlow — Task Management</p>
+                <p class="proj-desc">Task assignment and tracking system with role-based permissions and background job processing.</p>
+                <p class="proj-meta">Tech: ASP.NET Core • Hangfire • SQL Server • Redis</p>
+              </div>
+              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end">
+                <a class="btn" href="https://github.com/sahilfolio/taskflow" target="_blank" rel="noopener">Source</a>
+                <a href="#" style="margin-top:8px;color:var(--muted);font-size:0.9rem">Demo: Not hosted</a>
+              </div>
+            </article>
+
+            <!-- Add more projects by copying the block above -->
+
+          </div>
+        </section>
+
+        <section id="skills" class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Skills</h2>
+          <div class="skill-list">
+            <span class="skill">C# / .NET 6+</span>
+            <span class="skill">ASP.NET Core</span>
+            <span class="skill">Web APIs / REST</span>
+            <span class="skill">Entity Framework</span>
+            <span class="skill">SQL Server</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Unit Testing</span>
+            <span class="skill">Azure / AWS (basic)</span>
+            <span class="skill">Git & GitHub</span>
+          </div>
+        </section>
+
+      </div>
+
+      <aside>
+        <section class="card profile">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3 style="margin:0">Quick Links</h3>
+              <div class="links" style="margin-top:8px">
+                <a href="https://github.com/sahilfolio" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/sahilfolio" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:6px">
+            <h4 style="margin:0 0 8px 0">Profile</h4>
+            <p style="color:var(--muted);margin:0;font-size:0.95rem">Experienced .NET backend developer focused on APIs, performance and clean code.</p>
+          </div>
+
+          <div style="margin-top:12px">
+            <h4 style="margin:0 0 8px 0">Education</h4>
+            <p style="color:var(--muted);margin:0;font-size:0.95rem">B.Tech in Computer Science — University Name</p>
+          </div>
+
+          <div style="margin-top:12px">
+            <h4 style="margin:0 0 8px 0">Contact</h4>
+            <p style="color:var(--muted);margin:0"><a href="mailto:hello@example.com" style="color:var(--accent)">hello@example.com</a></p>
+            <p style="color:var(--muted);margin:0">Location: India</p>
+          </div>
+
+        </section>
+
+        <section id="contact" class="card" style="margin-top:12px">
+          <h3 style="margin-top:0">Contact</h3>
+          <form class="contact-form" onsubmit="alert('This is a static demo. Replace the handler to send emails or use form services.'); return false;">
+            <label for="name">Name</label>
+            <input id="name" placeholder="Your name" />
+            <label for="email">Email</label>
+            <input id="email" placeholder="you@example.com" />
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Hi Sahil — I'd like to talk about..."></textarea>
+            <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
+              <button class="btn" type="submit">Send (Demo)</button>
+            </div>
+          </form>
+        </section>
+
+      </aside>
+    </main>
+
+    <footer>
+      <p>Built with care • <a href="https://github.com/sahilfolio" style="color:var(--accent)">GitHub</a></p>
+    </footer>
+  </div>
+
+  <!-- Small helper script: updates URLs with placeholder username quickly -->
+  <script>
+    // If you want to quickly replace all occurrences of 'sahilfolio' in links with your GitHub username
+    // open the console and run: setUsername('realusername')
+    function setUsername(u){
+      if(!u) return;
+      document.querySelectorAll('a[href*="sahilfolio"]').forEach(a=>{
+        a.href = a.href.replace(/sahilfolio/g,u);
+      });
+      document.querySelectorAll('img[src*="placeholder"]').forEach(img=>{
+        img.alt = 'Photo of ' + u;
+      });
+      // update title
+      document.title = u + ' — .NET Developer';
+    }
+  </script>
+</body>
+</html>
