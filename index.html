@@ -12,13 +12,11 @@
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
 
-  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- Structured Data for ATS -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,383 +25,335 @@
     "jobTitle": ".NET Full Stack Developer",
     "alternateName": "Software Engineer",
     "email": "sahildotnetdeveloper@zohomail.in",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mohali",
-      "addressCountry": "IN"
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Dr. B.R. Ambedkar Govt. Polytechnic"
-    },
-    "knowsAbout": [
-      ".NET Development",
-      "ASP.NET Core",
-      "C# Programming",
-      "Full Stack Development",
-      "Backend Development",
-      "API Development",
-      "REST APIs",
-      "Web APIs",
-      "Entity Framework Core",
-      "SQL Server",
-      "Database Design",
-      "Software Engineering",
-      "Object-Oriented Programming",
-      "Multi-Tenant Architecture",
-      "Multi-Tenancy",
-      "SaaS Architecture",
-      "Tenant Isolation",
-      "Data Isolation",
-      "Azure DevOps",
-      "CI/CD",
-      "Git",
-      "Unit Testing",
-      "IIS Deployment"
-    ],
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "Diploma",
-      "about": "Computer Engineering"
-    },
-    "worksFor": {
-      "@type": "Organization",
-      "name": "C.S. Soft Solutions Pvt. Ltd.",
-      "jobTitle": "Junior Software Developer"
-    },
-    "sameAs": [
-      "https://github.com/sahilkumar1792",
-      "https://www.linkedin.com/in/sahil-kumar-8a7083206"
-    ]
+    "address": {"@type": "PostalAddress","addressLocality": "Mohali","addressCountry": "IN"},
+    "alumniOf": {"@type": "EducationalOrganization","name": "Dr. B.R. Ambedkar Govt. Polytechnic"},
+    "knowsAbout": [".NET Development","ASP.NET Core","C# Programming","Full Stack Development","Backend Development","API Development","REST APIs","Web APIs","Entity Framework Core","SQL Server","Database Design","Software Engineering","Object-Oriented Programming","Multi-Tenant Architecture","Multi-Tenancy","SaaS Architecture","Tenant Isolation","Data Isolation","Azure DevOps","CI/CD","Git","Unit Testing","IIS Deployment"],
+    "hasCredential": {"@type": "EducationalOccupationalCredential","credentialCategory": "Diploma","about": "Computer Engineering"},
+    "worksFor": {"@type": "Organization","name": "C.S. Soft Solutions Pvt. Ltd.","jobTitle": "Junior Software Developer"},
+    "sameAs": ["https://github.com/sahilkumar1792","https://www.linkedin.com/in/sahil-kumar-8a7083206"]
   }
   </script>
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <div class="hero-left">
-        <p style="margin:0;color:var(--accent);font-weight:700">.NET Full Stack Developer</p>
-        <h1>Sahil Kumar</h1>
-        <p class="lead">Experienced .NET Full Stack Developer and Software Engineer specializing in backend development, API development, and full-stack solutions. I build scalable, reliable backend systems and REST APIs using ASP.NET Core, C#, Entity Framework Core, and SQL Server. Expert in clean architecture, testability, CI/CD pipelines, and stable production deployments for enterprise applications.</p>
-
-        <div class="cta">
-          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
-          <a class="btn" href="https://github.com/sahilkumar1792" target="_blank" rel="noopener">View GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/sahil-kumar-8a7083206" target="_blank"
-            rel="noopener">LinkedIn</a>
-          <a class="btn secondary" href="#projects">Projects</a>
-          <a class="btn secondary" href="#contact">Contact</a>
-        </div>
+    <nav class="nav">
+      <a class="brand" href="#home">Sahil<span class="brand-accent">.</span></a>
+      <div class="nav-links">
+        <a href="#home">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn small" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
+      
+    </nav>
 
-      <div class="hero-right">
-        <div class="avatar" aria-hidden="true">
-          <img src="assets/img/profile.png" alt="Sahil Kumar - .NET Developer">
+    <header id="home" class="profile-cover">
+      <div class="cover-bg" style="background-image:url('https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1600&auto=format&fit=crop');"></div>
+      <div class="cover-overlay"></div>
+      <div class="profile-header center">
+        <div class="profile-avatar">
+          <img src="/assets/img/profile.png" alt="Sahil Kumar - Profile">
         </div>
-      </div>
-
-      <!-- Toggle widget (sun - switch - moon) -->
-      <div class="switch-wrapper" title="Toggle theme">
-        <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <div class="toggle-wrapper">
-          <input id="switch" type="checkbox" />
-          <label for="switch" id="toggle" aria-label="Toggle theme"></label>
+        <h1 class="profile-name">Sahil Kumar</h1>
+        <p class="profile-headline">.NET Full Stack Developer · Backend & API Specialist</p>
+        <p class="profile-sub">Mohali, IN · <a href="mailto:sahildotnetdeveloper@zohomail.in">Contact info</a></p>
+        <div class="profile-badges">
+          <span class="badge">Open to work</span>
+          <span class="badge">Actively learning .NET 8</span>
         </div>
-        <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
+        <div class="profile-actions">
+          <a class="btn" href="#projects">View Featured</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn secondary" href="#contact">Message</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <div>
-        <section id="about" class="card">
-          <h2>About</h2>
-          <p style="color:var(--muted);margin:0">
-            Hello — I'm <strong>Sahil Kumar</strong>, a .NET Full Stack Developer and Software Engineer with 2+ years of professional experience currently working as a Junior Software Developer at C.S. Soft Solutions Pvt. Ltd. (September 2023 – Present, 2 Years). 
-            I specialize in backend development, API development, full-stack development, and software engineering. I collaborate with U.S. client teams to build scalable, production-ready enterprise applications with clean architecture, maintainable code, reliable performance, and robust error handling. My expertise includes C# programming, ASP.NET Core development, REST API development, database design, Entity Framework Core, SQL Server optimization, Azure DevOps CI/CD, and agile software development methodologies.
-          </p>
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Latest work &amp; featured · multi-tenant SaaS · production-ready APIs · clean architecture ✦</span>
+          <span>Latest work &amp; featured · multi-tenant SaaS · production-ready APIs · clean architecture ✦</span>
+          <span>Latest work &amp; featured · multi-tenant SaaS · production-ready APIs · clean architecture ✦</span>
+          <span>Latest work &amp; featured · multi-tenant SaaS · production-ready APIs · clean architecture ✦</span>
+          <span>Latest work &amp; featured · multi-tenant SaaS · production-ready APIs · clean architecture ✦</span>
+          <span>Latest work &amp; featured · multi-tenant SaaS · production-ready APIs · clean architecture ✦</span>
+        </div>
+      </section>
 
-          <p style="margin-top:10px;color:var(--muted)"><strong>Email:</strong>
-            <a href="mailto:sahildotnetdeveloper@zohomail.in"
-              style="color:var(--accent)">sahildotnetdeveloper@zohomail.in</a>
-          </p>
-        </section>
-
-        <!-- Projects section (Professional / Training / Mini) -->
-        <section id="projects" class="card" style="margin-top:16px">
-          <h2>Projects</h2>
-
-          <h3 style="margin-top:0;margin-bottom:8px">Professional Work</h3>
-          <div class="projects">
-            <article class="project">
-              <div class="proj-left">
-                <p class="proj-title">Tax Appeal Plus — Property Tax Grievance Platform</p>
-                <p class="proj-desc">I develop and maintain Tax Appeal Plus, an enterprise-level multi-tenant CRM and workflow automation platform used by high-volume property-tax-appeal firms across New York State and beyond. I designed and implemented the multi-tenant architecture, enabling the platform to serve multiple clients with isolated data, configurations, and workflows within a single application instance. As a backend developer and API developer, I build RESTful APIs and Web APIs using ASP.NET Core and C# programming. I design and implement data-access layers using Entity Framework Core and SQL Server database optimization with multi-tenant data isolation strategies. I develop workflow automation systems, notification systems, tenant management systems, and manage CI/CD deployment pipelines in Azure DevOps. The multi-tenant application handles client intake, document automation, document filing, invoicing, and reporting—consolidating operations that were traditionally scattered across spreadsheets, word-processors and multiple disconnected tools. My contributions enable property-tax grievance firms to scale efficiently, reduce manual errors, and deliver faster turnaround on thousands of appeals annually through improved software engineering practices, multi-tenant architecture design, and backend development expertise.</p>
-                <p class="proj-meta">Client: Done Right Software LLC (USA)</p>
-                <p class="proj-meta">Technologies: ASP.NET Core • C# • .NET Framework • Entity Framework Core • SQL Server • Database Design • Multi-Tenant Architecture • Multi-Tenancy • SaaS Architecture • REST API • Web API • Backend Development • jQuery • JavaScript • Azure DevOps • CI/CD • Git • Software Development • Object-Oriented Programming • MVC Architecture • Tenant Isolation • Data Isolation</p>
-              </div>
-              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end">
-                <a class="btn" href="https://github.com/sahilfolio" target="_blank" rel="noopener">Private Source</a>
-                <span class="meta-small" style="margin-top:8px;color:var(--muted)">Active Development</span>
-              </div>
-            </article>
-          </div>
-
-          <h3 style="margin-top:16px;margin-bottom:8px">Training Projects</h3>
-          <div class="projects">
-            <article class="project">
-              <div class="proj-left">
-                <p class="proj-title">E-Commerce Bookstore</p>
-                <p class="proj-desc">Full-stack e-commerce application with user authentication, role-based authorization, product catalog management, shopping cart functionality, and secure payment integration. Built using ASP.NET Core MVC, Entity Framework Core, SQL Server, and ASP.NET Core Identity for authentication and authorization.</p>
-                <p class="proj-meta">Technologies: ASP.NET Core MVC • Entity Framework Core • SQL Server • ASP.NET Core Identity • Authentication • Authorization • C# • .NET Development • Database Design • Full Stack Development</p>
-              </div>
-              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end">
-                <a class="btn" href="#" target="_blank" rel="noopener">Source (Optional)</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="proj-left">
-                <p class="proj-title">Employee Management System</p>
-                <p class="proj-desc">Enterprise employee management system with role-based access control (RBAC), complete CRUD operations, user authentication, and comprehensive admin dashboard. Features include employee data management, user management, and role-based authorization for secure access control.</p>
-                <p class="proj-meta">Technologies: ASP.NET Core MVC • SQL Server • Database Design • Bootstrap • C# • .NET Development • CRUD Operations • Role-Based Access Control • Authentication • Authorization • Backend Development</p>
-              </div>
-              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end">
-                <a class="btn" href="#" target="_blank" rel="noopener">Source (Optional)</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="proj-left">
-                <p class="proj-title">Blog Website (Umbraco CMS)</p>
-                <p class="proj-desc">Content management system (CMS) and publishing platform built using Umbraco CMS. Features include content management, content publishing dashboard, content workflow, and custom content types developed using C# and MVC architecture.</p>
-                <p class="proj-meta">Technologies: Umbraco CMS • C# • MVC • ASP.NET Core • Content Management System • CMS Development • .NET Development • Software Development</p>
-              </div>
-              <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end">
-                <a class="btn" href="#" target="_blank" rel="noopener">Source (Optional)</a>
-              </div>
-            </article>
-          </div>
-
-          <h3 style="margin-top:16px;margin-bottom:8px">Mini Projects</h3>
-          <div class="projects">
-            <article class="project">
-              <div class="proj-left">
-                <p class="proj-title">Calculator (C# Desktop App)</p>
-                <p class="proj-desc">Basic arithmetic calculator created during college learning.</p>
-                <p class="proj-meta">Tech: C# • WinForms</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="skills" class="card" style="margin-top:16px">
-          <h2>Skills</h2>
-          <div class="skill-list">
-            <span class="skill">C# Programming</span>
-            <span class="skill">.NET Framework</span>
-            <span class="skill">.NET 6</span>
-            <span class="skill">.NET 7</span>
-            <span class="skill">.NET 8</span>
-            <span class="skill">ASP.NET Core</span>
-            <span class="skill">ASP.NET Core MVC</span>
-            <span class="skill">Web APIs</span>
-            <span class="skill">REST APIs</span>
-            <span class="skill">RESTful Services</span>
-            <span class="skill">API Development</span>
-            <span class="skill">Backend Development</span>
-            <span class="skill">Entity Framework Core</span>
-            <span class="skill">ORM</span>
-            <span class="skill">SQL Server</span>
-            <span class="skill">Database Design</span>
-            <span class="skill">Database Optimization</span>
-            <span class="skill">Stored Procedures</span>
-            <span class="skill">jQuery</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">IIS Deployment</span>
-            <span class="skill">Azure DevOps</span>
-            <span class="skill">CI/CD</span>
-            <span class="skill">Continuous Integration</span>
-            <span class="skill">Continuous Deployment</span>
-            <span class="skill">Unit Testing</span>
-            <span class="skill">Software Testing</span>
-            <span class="skill">Git</span>
-            <span class="skill">GitHub</span>
-            <span class="skill">Version Control</span>
-            <span class="skill">Object-Oriented Programming</span>
-            <span class="skill">OOP</span>
-            <span class="skill">Clean Architecture</span>
-            <span class="skill">Design Patterns</span>
-            <span class="skill">Software Engineering</span>
-            <span class="skill">Full Stack Development</span>
-            <span class="skill">Software Development</span>
-            <span class="skill">Agile Methodologies</span>
-            <span class="skill">Multi-Tenant Architecture</span>
-            <span class="skill">Multi-Tenancy</span>
-            <span class="skill">SaaS Architecture</span>
-            <span class="skill">Tenant Isolation</span>
-            <span class="skill">Data Isolation</span>
-          </div>
-        </section>
-
-      </div>
-
-      <aside>
-        <section class="card profile">
-          <div style="display:flex;justify-content:space-between;align-items:center">
+      <section id="experience" class="section">
+        <div class="section-head">
+          <h2>Experience</h2>
+        </div>
+        <div class="grid cards">
+          <article class="card experience-card">
+            <div class="exp-logo">CS</div>
             <div>
-              <h3 style="margin:0">Quick Links</h3>
-              <div class="links" style="margin-top:8px">
-                <a href="https://github.com/sahilfolio" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.linkedin.com/in/sahil-kumar-8a7083206" target="_blank" rel="noopener">LinkedIn</a>
+              <div class="exp-header">
+                <h3 class="card-title">Junior Software Developer</h3>
+                <span class="exp-company">C.S. Soft Solutions Pvt. Ltd.</span>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-chip">Oct 2023 – Present</span>
+                <span class="exp-chip">Mohali, IN</span>
+              </div>
+              <ul class="exp-points">
+                <li>Built and maintained multi-tenant SaaS (Tax Appeal Plus) powering thousands of annual filings.</li>
+                <li>Designed REST APIs, EF Core data layers, and CI/CD pipelines on Azure DevOps.</li>
+                <li>Improved performance and reliability with clean architecture and observability.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-head">
+          <span class="section-label">Featured</span>
+          <h2>Projects</h2>
+          <p class="muted">Professional engagements and training builds.</p>
+        </div>
+        <div class="projects-group professional">
+          <h3 class="projects-heading">Professional Work</h3>
+          <article class="card project-card full">
+            <div class="card-body">
+              <h3 class="card-title">Tax Appeal Plus — Property Tax Grievance Platform</h3>
+              <p class="muted">I develop and maintain Tax Appeal Plus, an enterprise-level multi-tenant CRM and workflow automation platform used by high-volume property-tax-appeal firms across New York State and beyond. I designed and implemented the multi-tenant architecture, enabling the platform to serve multiple clients with isolated data, configurations, and workflows within a single application instance.</p>
+              <p class="muted">As a backend developer and API developer, I build RESTful APIs and Web APIs using ASP.NET Core and C# programming. I actively maintain two product versions in parallel—the original ASP.NET Web Forms 4.0 product and the newer ASP.NET Core MVC rebuild—while keeping feature parity. Both front-ends rely on a shared ASP.NET Core Web API project that I design, secure, and optimize with Entity Framework Core and SQL Server to enforce tenant isolation and consistent business rules.</p>
+              <p class="muted">The multi-tenant application handles client intake, document automation, document filing, invoicing, and reporting—consolidating operations that were traditionally scattered across spreadsheets, word-processors and multiple disconnected tools. My contributions enable property-tax grievance firms to scale efficiently, reduce manual errors, and deliver faster turnaround on thousands of appeals annually through improved software engineering practices, multi-tenant architecture design, and backend development expertise.</p>
+              <div class="project-meta">
+                <span>Client: Done Right Software LLC (USA)</span>
+                <span>Role: Backend & Frontend Developer</span>
+              </div>
+              <div class="tags">
+                <span>ASP.NET Core</span><span>ASP.NET Core MVC</span><span>ASP.NET Web Forms 4.0</span><span>C#</span><span>Entity Framework Core</span><span>SQL Server</span><span>Multi-Tenant Architecture</span><span>Azure DevOps</span><span>CI/CD</span>
               </div>
             </div>
-          </div>
-
-          <div style="margin-top:8px">
-            <h4 style="margin:0 0 8px 0">Profile</h4>
-            <p style="color:var(--muted);margin:0;font-size:0.95rem">
-              Experienced .NET Full Stack Developer and Software Engineer with 2+ years of professional experience in backend development, API development, and full-stack solutions. Specialized in ASP.NET Core, C# programming, REST API development, Entity Framework Core, SQL Server database design, and Azure DevOps CI/CD. Strong expertise in clean architecture, software engineering best practices, object-oriented programming, and delivering production-ready enterprise applications for U.S. clients.</p>
-          </div>
-
-          <div style="margin-top:12px">
-            <h4 style="margin:0 0 8px 0">Education</h4>
-            <p style="color:var(--muted);margin:0;font-size:0.95rem">Diploma in Computer Engineering — Dr. B.R. Ambedkar
-              Govt. Polytechnic, Ambota, Una</p>
-          </div>
-
-          <div style="margin-top:12px">
-            <h4 style="margin:0 0 8px 0">Contact</h4>
-            <p style="color:var(--muted);margin:0"><a href="mailto:sahildotnetdeveloper@zohomail.in"
-                style="color:var(--accent)">sahildotnetdeveloper@zohomail.in</a></p>
-            <p style="color:var(--muted);margin:0">Location: Mohali, India</p>
-          </div>
-        </section>
-
-        <section id="contact" class="card" style="margin-top:12px">
-          <h3 style="margin-top:0">Contact</h3>
-
-          <form id="contactForm" class="contact-form" action="https://formspree.io/f/manlllal" method="POST">
-
-            <!-- Custom Email Subject -->
-            <input type="hidden" name="_subject" value="Portfolio Inquiry - From: {{name}}">
-
-
-            <label for="name">Name</label>
-            <input id="name" name="name" placeholder="Your name" required>
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Hi Sahil — I'd like to talk about..."
-              required></textarea>
-
-            <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
-              <button class="btn" type="submit">Send</button>
+            <div class="card-actions">
+              <a class="btn small" href="https://github.com/sahilfolio" target="_blank" rel="noopener">Private Source</a>
+              <span class="meta-small">Active Development</span>
             </div>
-          </form>
+          </article>
+        </div>
 
+        <div class="projects-group">
+          <h3 class="projects-heading">Training Projects</h3>
+          <div class="grid cards">
+            <article class="card project-card">
+              <div class="card-body">
+                <h3 class="card-title">E‑Commerce Bookstore</h3>
+                <p class="muted">Auth, roles, catalog, cart and payments on ASP.NET Core MVC + EF Core.</p>
+                <div class="tags">
+                  <span>MVC</span><span>EF Core</span><span>Identity</span><span>SQL Server</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Source</a>
+              </div>
+            </article>
 
-        </section>
+            <article class="card project-card">
+              <div class="card-body">
+                <h3 class="card-title">Employee Management</h3>
+                <p class="muted">CRUD, RBAC, authentication and admin dashboard for enterprises.</p>
+                <div class="tags">
+                  <span>ASP.NET Core</span><span>RBAC</span><span>SQL</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Source</a>
+              </div>
+            </article>
 
-      </aside>
+            <article class="card project-card">
+              <div class="card-body">
+                <h3 class="card-title">Blog (Umbraco CMS)</h3>
+                <p class="muted">Custom content types and publishing workflows using Umbraco.</p>
+                <div class="tags">
+                  <span>C#</span><span>Umbraco</span><span>MVC</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Source</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Endorseable skills similar to LinkedIn.</p>
+        </div>
+        <div class="grid chips">
+          <span class="chip">C#</span>
+          <span class="chip">ASP.NET Core</span>
+          <span class="chip">Web API</span>
+          <span class="chip">Entity Framework Core</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">Clean Architecture</span>
+          <span class="chip">Design Patterns</span>
+          <span class="chip">Azure DevOps</span>
+          <span class="chip">CI/CD</span>
+          <span class="chip">Git</span>
+          <span class="chip">Unit Testing</span>
+          <span class="chip">jQuery</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Multi‑Tenancy</span>
+        </div>
+      </section>
+
+      <section id="profiles" class="section">
+        <div class="section-head">
+          <span class="section-label">Stay with me</span>
+          <h2>Profiles</h2>
+          <p class="muted">Stay connected.</p>
+        </div>
+        <div class="grid profiles creative">
+          <a class="card profile-card creative" href="mailto:sahildotnetdeveloper@zohomail.in" title="Email">
+            <div class="profile-card__inner">
+              <div class="profile-left">
+                <img class="profile-icon" src="img/social/zohomail.svg" alt="email">
+                <div class="profile-text">
+                  <span class="profile-title">Email</span>
+                  <span class="profile-handle">sahildotnetdeveloper@zohomail.in</span>
+                </div>
+              </div>
+              <span class="profile-arrow">›</span>
+            </div>
+          </a>
+          <a class="card profile-card creative" href="https://github.com/sahilkumar1792" target="_blank" rel="noopener" title="GitHub">
+            <div class="profile-card__inner">
+              <div class="profile-left">
+                <img class="profile-icon" src="img/social/github.svg" alt="github">
+                <div class="profile-text">
+                  <span class="profile-title">GitHub</span>
+                  <span class="profile-handle">@sahilkumar1792</span>
+                </div>
+              </div>
+              <span class="profile-arrow">›</span>
+            </div>
+          </a>
+          <a class="card profile-card creative" href="https://www.linkedin.com/in/sahil-kumar-8a7083206" target="_blank" rel="noopener" title="LinkedIn">
+            <div class="profile-card__inner">
+              <div class="profile-left">
+                <img class="profile-icon" src="img/social/linkedin.svg" alt="linkedin">
+                <div class="profile-text">
+                  <span class="profile-title">LinkedIn</span>
+                  <span class="profile-handle">/sahil-kumar-8a7083206</span>
+                </div>
+              </div>
+              <span class="profile-arrow">›</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="stats" class="section">
+        <div class="grid stats">
+          <div class="card stat">
+            <div class="stat-num">02</div>
+            <div class="stat-label">Years<br>Experience</div>
+          </div>
+          <div class="card stat">
+            <div class="stat-num">+5</div>
+            <div class="stat-label">Clients<br>Worldwide</div>
+          </div>
+          <div class="card stat">
+            <div class="stat-num">+12</div>
+            <div class="stat-label">Total<br>Projects</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-banner">
+        <div class="cta-banner__inner">
+          <div>
+            <h3 class="cta-title">Let's work together.</h3>
+            <p class="muted">Open to backend-focused roles, API development and SaaS platforms.</p>
+          </div>
+          <a class="btn" href="#contact">Let's talk</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-head">
+          <h2>About</h2>
+        </div>
+        <div class="about">
+          <p class="muted">I'm a .NET developer focused on reliable backends and clean, testable code for enterprise apps. I work closely with U.S. client teams to ship stable releases with strong observability and CI/CD.</p>
+          <div class="about-meta">
+            <div>
+              <span class="meta-title">Current</span>
+              <span class="meta-value">Junior Software Developer @ C.S. Soft Solutions</span>
+            </div>
+            <div>
+              <span class="meta-title">Email</span>
+              <a class="meta-value" href="mailto:sahildotnetdeveloper@zohomail.in">sahildotnetdeveloper@zohomail.in</a>
+            </div>
+            <div>
+              <span class="meta-title">Location</span>
+              <span class="meta-value">Mohali, IN</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Have an opportunity or collaboration in mind? Let's talk.</p>
+        </div>
+        <form id="contactForm" class="contact-form card" action="https://formspree.io/f/manlllal" method="POST">
+          <input type="hidden" name="_subject" value="Portfolio Inquiry - From: {{name}}">
+          <div class="form-grid">
+            <div class="form-field"><label for="name">Name</label><input id="name" name="name" placeholder="Your name" required></div>
+            <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+          </div>
+          <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Hi Sahil — I'd like to talk about..." required></textarea></div>
+          <div class="form-actions"><button class="btn" type="submit">Send</button></div>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer__copyright">
         <div class="top"><span>Designed & Developed by</span></div>
-        <div class="bottom">
-          <span>Sahil Kumar</span>
-          <span>2025</span>
-        </div>
+        <div class="bottom"><span>Sahil Kumar</span><span>2025</span></div>
       </div>
-
       <div class="footer__links">
-        <!-- ZohoMail -->
-        <a href="mailto:sahildotnetdeveloper@zohomail.in" target="_blank" title="Email">
-          <span class="text">zohomail</span>
-          <img src="img/social/zohomail.svg" alt="zohomail">
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/sahilkumar1792" target="_blank" title="GitHub">
-          <span class="text">github</span>
-          <img src="img/social/github.svg" alt="github">
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/sahil-kumar-8a7083206" target="_blank" title="LinkedIn">
-          <span class="text">linkedin</span>
-          <img src="img/social/linkedin.svg" alt="linkedin">
-        </a>
+        <a href="mailto:sahildotnetdeveloper@zohomail.in" target="_blank" title="Email"><span class="text">zohomail</span><img src="img/social/zohomail.svg" alt="zohomail"></a>
+        <a href="https://github.com/sahilkumar1792" target="_blank" title="GitHub"><span class="text">github</span><img src="img/social/github.svg" alt="github"></a>
+        <a href="https://www.linkedin.com/in/sahil-kumar-8a7083206" target="_blank" title="LinkedIn"><span class="text">linkedin</span><img src="img/social/linkedin.svg" alt="linkedin"></a>
       </div>
     </footer>
-
-  </div>
-  <div id="toast" style="
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  background: var(--accent);
-  color: #0b1220;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-weight:600;
-  display: none;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-  z-index: 9999;
-">
-    Message sent ✅
   </div>
 
+  <div id="toast" style="position: fixed;bottom: 28px;right: 28px;background: var(--accent);color: #0b1220;padding: 12px 18px;border-radius: 8px;font-weight:600;display: none;box-shadow: 0 4px 14px rgba(0,0,0,0.4);z-index: 9999;">Message sent ✅</div>
 
-  <script src="assets/js/theme.js"></script>
+  
   <script>
     document.getElementById('contactForm').addEventListener('submit', async function (e) {
-      e.preventDefault(); // Stop default submit
-
+      e.preventDefault();
       const form = e.target;
       const toast = document.getElementById('toast');
-
       const formData = new FormData(form);
-
-      // Send form data via fetch to Formspree
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
+      const response = await fetch(form.action, { method: form.method, body: formData, headers: { 'Accept': 'application/json' } });
       if (response.ok) {
-        form.reset(); // Clear form
-        toast.style.display = 'block'; // Show toast
-
-        setTimeout(() => {
-          toast.style.display = 'none'; // Hide toast after 3s
-        }, 3000);
-
+        form.reset();
+        toast.style.display = 'block';
+        setTimeout(() => { toast.style.display = 'none'; }, 3000);
       } else {
-        alert("Something went wrong. Please try again.");
+        alert('Something went wrong. Please try again.');
       }
     });
   </script>
 
 </body>
-
 
 </html>
