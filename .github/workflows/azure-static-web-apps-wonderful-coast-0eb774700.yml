@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI/CD
+name: Azure Static Web Apps CI/CD V4
 
 on:
   push:
@@ -21,3 +21,4 @@ jobs:
           action: "upload"
           app_location: "/"
           output_location: "."
+
